@@ -1,0 +1,72 @@
+<%= form_for(@order) do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <div id="breadChoice">	
+		<ul type=none>
+			<li><h2>Bread</h2></li>
+			<li><%= f.radio_button :bread, 'White' %>White</li>
+			<li><%= f.radio_button :bread, 'Wheat' %>Wheat</li>
+			<li><%= f.radio_button :bread, 'Honey Oat' %>Honey Oat</li>
+			<li><%= f.radio_button :bread, 'Flat bread' %>Flat Bread</li>
+		</ul>
+	</div>	
+  </div>
+  
+  <div class="field">
+    <div id="cheeseChoice">	
+		<ul type=none>
+			<li><h2>Cheese</h2></li>
+			<li><%= f.radio_button :cheese , 'American'%>American</li>
+			<li><%= f.radio_button :cheese , 'Swiss' %>Swiss</li>
+			<li><%= f.radio_button :cheese , 'Cheddar' %>Cheddar</li>
+			<li><%= f.radio_button :cheese , 'Pepper Jack' %>Pepper Jack</li>
+		</ul>
+	</div>
+  </div>
+   
+  <div class="field">
+    <div id="otherChoice">
+		<ul type=none>
+			<li><h2>Meat</h2></li>
+			<li><%= f.radio_button :meat , 'Ham & Turkey'%>Ham & Turkey</li>
+			<li><%= f.radio_button :meat , 'Chicken Breast' %>Chicken Breast</li>
+			<li><%= f.radio_button :meat , 'Tuna' %>Tuna</li>
+			<li><%= f.radio_button :meat , 'Meatball' %>Meatball</li>
+		</ul>
+	</div>
+  </div>
+  
+  <div class="field">
+    <div id="vegitables">	
+		<ul type=none>
+			<li><h2>Vegitables</h2></li>
+			<li><%= f.radio_button :veg, 'lettuce'%>Lettuce</li>
+			<li><%= f.radio_button  :veg, 'cucumber'%>Cucumber</li>
+			<li><%= f.radio_button  :veg, 'onions'%>Onions</li>
+			<li><%= f.radio_button  :veg, 'pickles'%>Pickles</li>
+		</ul>
+	</div>	
+  </div>
+  
+  <div class="field">
+    <%= f.hidden_field :userid, :value => cookies[:remember_token] %>
+  </div>
+
+  <div class="actions">
+  	<div id="submit">
+    	<%= f.submit %>
+    </div>
+  </div>
+  
+<% end %>

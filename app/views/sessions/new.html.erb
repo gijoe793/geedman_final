@@ -1,0 +1,29 @@
+<div id="left"><br/>
+			
+</div>	
+<div id="body">
+	<div id="content">
+		<div id="otherChoice">
+			<h2>Login</h2>
+			<%= form_for(:session, :url => sessions_path) do |f| %>
+  
+ 				 <div class="field" >
+   					 <%= f.label :email %>
+    				<%= f.text_field :email %>
+  				</div>
+  				
+  				<div class ="field">
+  					<%= f.label :password %>
+  					<%= f.password_field :password %>
+  					
+  
+  				<div class="actions" >
+    				<%= f.submit "Sign in" %>
+  				</div>
+			<% end %>
+			<br/><br/><br/>
+			<%= link_to "Sign up now!", signup_path, :class => "signup_button" %>
+		</div>
+	</div>	
+</div>	
+

@@ -1,0 +1,121 @@
+﻿/*contains the login shit*/
+#header{
+	background-color:#00543D;
+	height:100px;
+	position:relative;
+	border-radius: 10px 10px 10px 10px;
+}
+/*contains the links*/
+#left{
+	background-color:#FFCC99;
+	width:10%;
+	height:100%;
+	color:#00543D;
+	border-radius: 10px 10px 10px 10px;
+}
+/*Contains the main ordering box*/
+#body{
+	background-color:white;
+	position:absolute;
+	left:10%;
+	top:0px;
+	width:90%;
+	height:100%;
+}
+/*this is the footer*/
+#footer{
+	background-color:#00543D;
+	height:100px;
+	color:white;
+	font-size:large;
+	text-align:center;
+	border-radius: 10px 10px 10px 10px;
+}
+/*contains the left, center*/
+#center{
+	position:relative;
+	height:600px;
+}
+/*inside the body*/
+#content{
+	background-color: #FFCC99;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	border: thick solid #00543D;
+	color:#00543D;
+	border-radius: 10px 10px 10px 10px;
+
+}
+/*The main container that holds everything*/
+#container{
+	position:absolute;
+	left:100px;
+	width:90%;
+	min-width:700px;
+}
+
+#image{
+	position: absolute;
+	color: white;
+	top: 40px;
+	font-weight: bolder;
+	
+}
+
+#headerText{
+	color:#00543D;
+}
+
+
+#breadChoice{
+
+	width:15%;
+	position:absolute;
+	top:100px;
+}
+
+#cheeseChoice{
+	width:15%;
+	position:absolute;
+	top:100px;
+	left:15%;
+}
+
+#otherChoice{
+
+	width:15%;
+	position:absolute;
+	top:100px;
+	left:30%;
+}
+#vegitables{
+	width:15%;
+	position:absolute;
+	top:100px;
+	left:45%;
+}
+#submit{
+	width:15%;
+	position:absolute;
+	bottom:10px;
+	left:85%;
+}
+a.signup_button{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 190px;
+	color: #fff;
+	background: #00543D;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 20px;
+}
+
+
+
+

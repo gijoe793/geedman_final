@@ -1,0 +1,27 @@
+
+<div id="left">
+	<br/>
+	<h3>&nbsp;&nbsp;Specials</h3>
+	<ul>
+		<li><%= link_to "Special 1", {:action => 'special1'}%> </li>
+		<li><%= link_to "Special 2", {:action => 'special2'} %></li>
+		<li><%= link_to "Special 3", {:action => 'special3'} %></li>
+	</ul>
+	<br/><br/>
+	<h3>&nbsp;&nbsp;My Last Order</h3>
+	<ul>
+		<li><%= link_to "My Order", {:action => 'myOrder'} %></li>
+	</ul>		
+	<br/><br/><br/>
+	&nbsp;&nbsp;<p id="headerText" ><%= link_to "Manage Account", edit_user_path(cookies[:remember_token]) %>
+	
+	&nbsp;&nbsp;<p id="headerText" ><%= link_to "Logout", logout_path %></p><br/>
+</div>
+
+
+
+<div id="body">
+	<div id="content">
+		<%= render 'form' %>
+	</div>
+</div>

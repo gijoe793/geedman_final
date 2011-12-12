@@ -1,0 +1,99 @@
+<div id="left"><br/>
+	<h3>Specials</h3>
+	<ul>
+		<li><%= link_to "Special 1", confirm_path %></li>
+		<li><%= link_to "Special 2", confirm_path %></li>
+		<li><%= link_to "Special 3", confirm_path %></li>
+	</ul>
+	<br/><br/>
+	<h3>Saved Orders</h3>
+	<ul>
+		<li><%= link_to "My Order 1", confirm_path %></li>
+		<li><%= link_to "My Order 2", confirm_path %></li>
+		<li><%= link_to "My Order 3", confirm_path %></li>
+	</ul>		
+	
+	
+	
+	<br/><br/><br/>
+	
+	
+	<%= link_to "Manage Account", '#' %>
+	
+	
+	<p id="headerText" ><%= link_to "Logout", logout_path %></p><br/>
+</div>
+
+
+<div id="body">
+	<div id="content">
+		
+		
+		
+		<form method="post" action="confirm">
+		<div id="breadChoice">
+			
+				<ul type=none>
+					<li><h2>Bread</h2></li>
+					<li><%= radio_button_tag 'bread', 'White', true %>White</li>
+					<li><%= radio_button_tag 'bread', 'Wheat' %>Wheat</li>
+					<li><%= radio_button_tag 'bread', 'Honey Oat' %>Honey Oat</li>
+					<li><%= radio_button_tag 'bread', 'Flat bread' %>Flat Bread</li>
+				</ul>
+		</div>	
+		
+		
+		
+			
+		<div id="cheeseChoice">
+			
+			<ul type=none>
+				<li><h2>Cheese</h2></li>
+				<li><%= radio_button_tag 'cheese', 'American', true %>American</li>
+				<li><%= radio_button_tag 'cheese', 'Swiss' %>Swiss</li>
+				<li><%= radio_button_tag 'cheese', 'Cheddar' %>Cheddar</li>
+				<li><%= radio_button_tag 'cheese', 'Pepper Jack' %>Pepper Jack</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		
+		
+		<div id="otherChoice">
+			
+			<ul type=none>
+				<li><h2>Meat</h2></li>
+				<li><%= radio_button_tag 'meat', 'Ham & Turkey', true %>Ham & Turkey</li>
+				<li><%= radio_button_tag 'meat', 'Chicken Breast' %>Chicken Breast</li>
+				<li><%= radio_button_tag 'meat', 'Tuna' %>Tuna</li>
+				<li><%= radio_button_tag 'meat', 'Meatball' %>Meatball</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		
+		
+		<div id="vegitables">
+			
+			<ul type=none>
+				<li><h2>Vegitables</h2></li>
+				<li><%= check_box_tag 'veg', 'lettuce'%>Lettuce</li>
+				<li><%= check_box_tag 'veg', 'cucumber'%>Cucumber</li>
+				<li><%= check_box_tag 'veg', 'onions'%>Onions</li>
+				<li><%= check_box_tag 'veg', 'pickles'%>Pickles</li>
+			</ul>
+		</div>	
+  		
+  		<div id="submit">
+			<input type="submit" value="Submit Order"/>
+		</div> 
+  		
+  		</form/>
+	</div>	
+</div>
+
+

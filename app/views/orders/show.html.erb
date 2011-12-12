@@ -1,0 +1,33 @@
+<div id="left"><br/>
+			
+</div>	
+<div id="body">
+	<div id="content">
+		
+		
+		
+		<h2>Do you want to proceed?</h2>
+		<p>
+ 			<b>Bread:</b>
+  			<%= @order.bread %>
+		</p>	
+
+		<p>
+  			<b>Cheese:</b>
+  			<%= @order.cheese %>
+		</p>
+
+		<p>	
+  			<b>Meat:</b>
+  			<%= @order.meat %>
+		</p>
+
+		<p>
+  			<b>Veg:</b>
+  			<%= @order.veg %>
+		</p>
+		
+		&nbsp;&nbsp;&nbsp;<%= link_to "Yes, place my order", confirm_path %><br/></br></br>
+		&nbsp;&nbsp;&nbsp;<%= link_to "No, I want to change my order", home_path %>
+	</div>	
+</div>	
